@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Door Dec</title>
+		<meta name="author"  content=""/>
+		<meta name="date updated"  content=""/>
+		<meta name="description"  content=""/>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css" type="text/css">
+
+	</head>
+	<body>
+		<div class="oven">
+		
+			<img src="images/knob.png"  class="knob">
+			<img src="images/knob.png"  class="knob">
+			<img src="images/knob.png"  class="knob">
+			<img src="images/knob.png"  class="knob">
+			
+			<div class="inside">
+				<div class="plate" id="plate" onclick="activatePlate()">
+					<img src="images/cookiecane.png" class="a">
+					<img src="images/cookieginger.png" class="cookie">
+					<img src="images/cookiemistle.png" class="cookie">
+					<img src="images/cookiepresent.png" class="cookie">
+					<br/>
+					<img src="images/cookieginger.png" class="b">
+					<img src="images/cookiemistle.png" class="cookie">
+					<img src="images/cookiepresent.png" class="cookie">
+					<img src="images/cookiecane.png" class="cookie">
+					<br/>
+					<img src="images/cookiemistle.png" class="c">
+					<img src="images/cookiepresent.png" class="cookie">
+					<img src="images/cookiecane.png" class="cookie">
+					<img src="images/cookieginger.png" class="cookie">
+					<br/>
+					<img src="images/cookie.png" class="d" id="one" onclick="cookieOne(event)">
+					<img src="images/cookie.png" class="cookie" id="two" onclick="cookieTwo(event)">
+					<img src="images/cookie.png" class="cookie" id="three" onclick="cookieThree(event)">
+					<img src="images/cookie.png" class="cookie" id="four" onclick="cookieFour(event)">
+				</div>
+				
+				<img src="images/door.png" id="door" class="openDoor" onclick="activateDoor()">
+				</div>
+			</div>
+		</div>
+		
+		<div class="description">
+			<h2>
+				Find the pattern. Once you think you have, click the mystery cookies to reveal what kind they are.
+			</h2>
+		</div>
+		
+		<div class="hint">
+			<h2>
+				Ginger Bread Man always comes after Candy Cane, Mistletoe always comes after Ginger Bread Man, Present always comes after Mistletoe, etc. Move the first cookie to the last position and shift every cookie left one space.
+			</h2>
+			<h2>
+				Click flap again to close ➡
+			</h2>
+			
+			<div class="flap" id="flap" onclick="activateHint()">
+				<h1>
+					Click For Hints
+				</h1>
+			</div>
+		</div>
+	</body>
+	<script src="scripts.js"></script>
+</html>
